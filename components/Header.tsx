@@ -1,6 +1,6 @@
 "use client"
 
-import { MobileNav } from "@/components/MobileNav"
+import { MobileNav } from "./MobileNav"
 import { HardHat } from "lucide-react"
 
 export function Header() {
