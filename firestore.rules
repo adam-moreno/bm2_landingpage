@@ -1,0 +1,11 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /contact_submissions/{document} {
+      allow read: if false;  // No one can read the submissions
+      allow create: if true; // Anyone can create a submission
+      allow update, delete: if false; // No one can update or delete
+    }
+  }
+}
